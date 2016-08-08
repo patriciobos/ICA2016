@@ -187,6 +187,9 @@ UNIDEF
 		
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Materials and Methods}
 
 \subsection{Phytoplanktonic cultures}
@@ -246,219 +249,150 @@ Phyoplanktonic single-species cultures of \textit{Skeletonema pseudocostatum} ge
 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}{MATERIALS AND METHODS - Optical counting and morphological features estimation}
 \Fontable
 
 \begin{itemize}
-\item Estimation of \textit{Numerical Abundance}, N, of individual and chained cells using Nëubahuer camera and optical microscope.
-\end{itemize}
+\item Estimation of \textit{Numerical Abundance}, N, of individual and chained cells using Nëubahuer camera.
+\item Image processing techniques (blob analysis) for estimation of size statistical distribution of scatterers.
 
 \vspace{0.3pc}
-\begin{minipage}[c]{1\linewidth}
-\begin{minipage}[c]{0.7\linewidth}
-\begin{itemize}
-	\Fontable
-	\item<3-> Image processing techniques (blob analysis) for estimation of size statistical distribution of scatterers
-	
+{\hspace{2pc} \includegraphics[width=0.56\paperwidth]{imagenes/proc_imagenes.pdf}}
+
+
+\item Estimation of \textbf{\textit{Backscattering Cross Section}}, $\sigma_{bs}$, using Johnson modified model, previously assuming that each chain of cells behaves like an equivalent volume sphere.
 \end{itemize}
-\end{minipage}
-\begin{minipage}[c]{0.29\linewidth}
-\visible<2->{\includegraphics[width=0.16\paperwidth]{imagenes/Sc40.jpg}}
-\end{minipage}
-\end{minipage}
-
-%\begin{itemize}
-%\item<2-> When assumptions apply, $S_V$ depends on:
-%	\begin{itemize}
-%	\Fontable
-%		\item<2-> \textbf{Frequency}, $f$.
-%		\item<2-> Numerical Abundance, $N$.
-%		\item<2-> Relation between the wavelength, $\lambda$ and scatterers' characteristic size, $a$.
-%		\item<2-> \textbf{Density} and \textbf{sound speed contrasts} relative to the aqueous medium.
-%	\end{itemize}
-%	
-%\vspace{2mm}
-%\item<3-> For \textit{Rayleigh region} ($k  a \ll 1$, where $k=2\pi / \lambda)$, the scattered field is \textbf{isotropic}. Then,
-%\end{itemize}
-%\visible<3->{\[
-%\boxed{S_v = 10 \log \left( \frac{\sigma_v}{4\pi} \right)}
-%\]}
-%\visible<3->{where $\sigma_v$ (m$^{-1}$) is the {\textbf{Volume Backscattering Coefficient}}.}
 
 \end{frame}
 
-\begin{frame}{INTRODUCTION - Fundamentals of Volume Scattering Phenomena}
-\Fontable
-\begin{minipage}[c]{1\linewidth}
-\begin{minipage}[c]{0.7\linewidth}
-\begin{itemize}
-\item[]
-\item<2-> If there is a \textbf{dominant} type of scatterers with \textbf{low variability} size distribution, then
-\visible<3->{\[ \boxed{ \sigma_v = N \sigma_{bs}} \]}
-\visible<3->{where $\sigma_{bs}$ (m$^2$) is the average {\textbf{Backscattering Cross-Section}} of the individual scatterers.}
-\vspace{1pc}
-\item<4-> If there are several types of scatterers grouped by size,
-\visible<5->{\[ \boxed{\sigma_v = \sum N_i {\sigma_{bs}}_i} \]}
-\visible<5->{where $ N_i $ is the Numerical Abundance of the scatterers' $ith$-group  and $ {\sigma_{bs}}_i $ is the \textbf{corresponding Backscattering Cross-Section}.}
-\end{itemize}
-\end{minipage}
-\begin{minipage}[c]{0.28\linewidth}
-
-\tiny
-\visible<2->{\textit{Chlamydomonas reinhardtii}} \\
-\visible<2->{\includegraphics[width=0.2\paperwidth]{imagenes/clamis.jpg}}
-
-\vspace{3mm}
-
-\visible<4->{\textit{Skeletonema pseudocostatum}} \\
-\visible<4->{\includegraphics[width=0.2\paperwidth]{imagenes/skeletonema.jpg}}
-\end{minipage}
-\end{minipage}
-
-\end{frame}
-
-\section{Modelling}
-
-
-\begin{frame}{MODELLING}
-\Fontable
-\visible<2->{Backscattering cross-section of \textcolor{darkgreen}{{\bf \textit{Skeletonema pseudocostatum}}} was estimated by three different approaches:}
-
-\begin{minipage}[c]{1\linewidth}
-\begin{minipage}[c]{0.6\linewidth}
-
-
-\begin{enumerate}
-\item<3-> \textbf{Johnson Modified model} (Blanc \textit{et al}, 2000): every individual scatterer is represented by an equivalent volume sphere.
-
-\vspace{1cm}
-\item<4-> \textbf{``Chain'' model} (Bok \textit{et al}, 2010): every chain of scatterers is represented by an equivalent volume sphere
-
-\vspace{1.2cm}
-\item<5-> \textbf{Prolate Spheroidal model} (González \textit{et al}, 2011, and Prario \textit{et al}, 2015): every chain of scatterers is represented by an equivalent volume prolate shperoid.
-\end{enumerate}
-
-\end{minipage}
-\begin{minipage}[c]{0.36\linewidth}
-\visible<3->{\includegraphics[width=0.28\paperwidth]{imagenes/johnson.jpg}}
-\visible<4->{\centering{\includegraphics[width=0.22\paperwidth]{imagenes/cadenas.jpg}}}
-\visible<5->{\includegraphics[width=0.28\paperwidth]{imagenes/prolado.jpg}}
-\end{minipage}
-\end{minipage}
-
-\end{frame}
-
-\section{Materials and Methods}
 \subsection{Experimental Setup}
 
 \begin{frame}{MATERIALS AND METHODS - Experimental setup}
 \Fontable
-\begin{itemize}
-\item []
-\item<2-> Insonification of \textcolor{darkgreen}{{\bf \textit{Skeletonema pseudocostatum, Euglena gracilis}}} and \textcolor{darkgreen}{{\bf \textit{Chlamydomonas reinhardtii}}} liquid cultures with 2.25, 3.5 and 5 MHz ultrasonic transducers by pulsed excitation.
-\item<3-> Signal conditioning and amplification.
-\item<4-> Acquisition and processing.
-\end{itemize}
 
-
-\raisebox{5mm}{\visible<	
-2->{\includegraphics[width=0.22\paperwidth]{imagenes/vaso.jpg}}}
-\only<1>{\includegraphics[width=0.55\paperwidth]{imagenes/white2.jpg}}
-\only<2>{\includegraphics[width=0.55\paperwidth]{imagenes/especies.jpg}}
-\only<3>{\includegraphics[width=0.55\paperwidth]{imagenes/pulso-eco_y_detalle3_ingles2.jpg}}
-\only<4->{\includegraphics[width=0.55\paperwidth]{imagenes/banco_medicion_ingles.jpg}}
-
-\end{frame}
-
-\subsection{Minimization of Spourious scatterers effect}
-
-\begin{frame}{MATERIALS AND METHODS - Minimization of spurious scatterers effect}
-\Fontable
-\begin{itemize}
-\item<2-> The existence of undesired scatterers along the insonified volume (bubbles and suspended particles) \textbf{affects} the total backscattered power.
-
-\vspace{2px}
-\centering
-\only<1-2>{\includegraphics[width=0.64\paperwidth]{imagenes/white.jpg}}
-\only<3-4>{\includegraphics[width=0.67\paperwidth]{imagenes/respuestones.pdf}}
-\only<5->{\includegraphics[width=0.67\paperwidth]{imagenes/respuestones2.pdf}}
-\end{itemize}
-
-\vspace{3px}
-\visible<4-> {\bf When the spurious acoustic responses amplitudes and shapes are \textit{not} easily detectable,} 
-\visible<6->{\textcolor{darkblue}{\bf \textit{signal processing techniques} should be applied}.}
-
-\end{frame}
-
-\begin{frame}{MATERIALS AND METHODS - Minimization of spurious scatterers effect}
-\Fontable
 \begin{minipage}[c]{1\linewidth}
-\begin{minipage}[c]{0.46\linewidth}
+\begin{minipage}[c]{0.7\linewidth}
 \begin{itemize}
-\item<2-> Acquisition of ensembles of $\sim 300$ backscattered signals. 
-\item<2-> Segmentation of each signal in intervals of $\sim 1\hspace{1px}\mu s$.
+	\Fontable
+	\item<3-> Insonification of \textcolor{darkgreen}{{\bf \textit{Skeletonema pseudocostatum}}} liquid cultures with 5 MHz ultrasonic transducers by pulsed excitation.
+\end{itemize}
+\end{minipage}
+\begin{minipage}[c]{0.29\linewidth}
+\visible<2->{\includegraphics[width=0.16\paperwidth]{imagenes/vaso.jpg}}
+\end{minipage}
+\end{minipage}
 
-\vspace{2pc}
-\item<3-> Narrowband filtering (centered at the transducer frequency) and signal power computation for \textbf{each} segment.
-\item<3-> Computation of filtered to non-filtered signal power ratio for \textbf{each} segment.
-\item<4-> Two-dimensional histogram representation.
+\begin{itemize}
+\item<3-> Signal conditioning and amplification, acquisition and processing.
 \end{itemize}
 
-\end{minipage}
-\begin{minipage}[c]{0.55\linewidth}
-\visible<2->{\includegraphics[width=0.41\paperwidth]{imagenes/segmentacion1.pdf}}
-
-\hspace{1pc}\visible<4->{\includegraphics[width=0.33\paperwidth]{imagenes/hist3d_ok.pdf}}
-\end{minipage}
-\end{minipage}
-
+\begin{center}
+\only<3>{\includegraphics[width=0.4\paperwidth]{imagenes/pulso-eco_y_detalle3_ingles2.jpg}}
+\only<4->{\includegraphics[width=0.4\paperwidth]{imagenes/banco_medicion_ingles.jpg}}
+\end{center}
 
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{SIGNALS SIMULATION}
+
+\begin{frame}{SIGNALS SIMULATION}
+\Fontable
+
+Theoretical formulation of the acoustic measurements for the simulation of the backscattered signal.
+
+Assumptions:
+\begin{itemize}
+\item Ideal piston transducer (emmiter \textbf{and} receiver) of disk radius $a$, excitated with a pulsed sinusoid.
+\item Near field (region closest to the transducer face) characterized by a plane wave bounded to a coaxial cilyndrial surface).
+\item Spatial random distribution of Rayleigh scatterers with a size distribution estimated from cultures images analysis.
+\item Ouput voltage of the transducer proportional to the integral of the received pressure over the whole face.
+
+\end{itemize}
+
+\begin{center}
+\only<3>{\includegraphics[width=0.28\paperwidth]{imagenes/incident_scat_fields.pdf}}
+\only<4->{\includegraphics[width=0.46\paperwidth]{imagenes/transducer_face.pdf}}
+\end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{SIGNALS SIMULATION}
+\Fontable
+
+Total backscattered voltage due to $M$ randomly distributed scatterers:
+\begin{equation}
+v_{\text{total}_{bs}}(t) = v_\text{inc}(t) * \sum_{m=1}^{M} \tilde{f}_{\infty_m} H^{-1}_\text{spher}(R_m,h_m,t)
+\end{equation}
+where $*$ stands for convolution operator, and
+\begin{itemize}
+\item $v_\text{inc}(t)$; Incdent voltage.
+\item $\tilde{f}_{\infty_m}$; far-field amplitued backscattering function of the \textit{m-th} scatterer.
+\item $H^{-1}_\text{spher}(R_m,h_m,t)$; impulse response of the backscattering of a single scatterer located at distances $R_m$ from the transducer face and $h_m$ from the acoustic axis.
+\end{itemize}
+
+\begin{center}
+{\includegraphics[width=0.37\paperwidth]{imagenes/respuesta_uno_solo.jpg}}
+{\includegraphics[width=0.37\paperwidth]{imagenes/respuesta_muchos.jpg}}
+\end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{$S_v$ determination}
 
-\begin{frame}{MATERIALS AND METHODS - Determination of Volume Backscattering Strength, $S_v$}
-\Fontable
-\begin{minipage}[c]{1\linewidth}
-\begin{minipage}[c]{0.46\linewidth}
-\begin{itemize}
-\vspace{1pc}
-\item<2-> Mean signal power was computed by averaging the power of the bins with frequencies above a selected threshold.
-\item<3-> From the experimental viewpoint, non-dependent on any model, the Volume Backscattering Strength, $S_v$, can be expressed as
-\item<4-> Identical transducers were used to measure the incident and backscattered intensities. This fact enabled to calculate $S_v$ without taking into account any sensitivity values.
-\end{itemize}
- 
-\end{minipage}
-\begin{minipage}[c]{0.55\linewidth}
-\visible<2->{\includegraphics[width=0.41\paperwidth]{imagenes/umbral_ok2.pdf}}
-
-
-\hspace{1pc}\visible<3->{
-\[
-\textcolor{darkblue}{\boxed{S_v = 10 \log \left( \frac{ \langle v_{bs}^2 \hspace{1px} \rangle 2}{v_{inc}^2 \hspace{1px} c \tau \psi} \right)}}
-\]
-}
-\scriptsize
-
-\visible<3->{
-\hspace{2pc}where
-
-\hspace{2pc}$\langle v_{bs}^2 \rangle \propto$ backscattered intensity
-
-\hspace{2pc}$v_{inc}^2 \propto$ incident intensity
-
-\hspace{2pc}$c \;\rightarrow$  sound speed in the medium
-
-\hspace{2pc}$\tau \;\rightarrow$ pulse duration
-
-\hspace{2pc}$\psi \;\rightarrow$ equivalent beam width
-}
-
-
-\end{minipage}
-\end{minipage}
-
-\end{frame}
+%\begin{frame}{MATERIALS AND METHODS - Determination of Volume Backscattering Strength, $S_v$}
+%\Fontable
+%\begin{minipage}[c]{1\linewidth}
+%\begin{minipage}[c]{0.46\linewidth}
+%\begin{itemize}
+%\vspace{1pc}
+%\item<2-> Mean signal power was computed by averaging the power of the bins with frequencies above a selected threshold.
+%\item<3-> From the experimental viewpoint, non-dependent on any model, the Volume Backscattering Strength, $S_v$, can be expressed as
+%\item<4-> Identical transducers were used to measure the incident and backscattered intensities. This fact enabled to calculate $S_v$ without taking into account any sensitivity values.
+%\end{itemize}
+% 
+%\end{minipage}
+%\begin{minipage}[c]{0.55\v_{\text{total}_{bs}}(t) = v_\text{inc}(t) * \sum_{m=1}^{M} \tilde{f}_{\infty_m} H^{-1}_\text{spher}(R_m,h_m,t)linewidth}
+%\visible<2->{\includegraphics[width=0.41\paperwidth]{imagenes/umbral_ok2.pdf}}
+%
+%
+%\hspace{1pc}\visible<3->{
+%\[
+%\textcolor{darkblue}{\boxed{S_v = 10 \log \left( \frac{ \langle v_{bs}^2 \hspace{1px} \rangle 2}{v_{inc}^2 \hspace{1px} c \tau \psi} \right)}}
+%\]
+%}
+%\scriptsize
+%
+%\visible<3->{
+%\hspace{2pc}where
+%
+%\hspace{2pc}$\langle v_{bs}^2 \rangle \propto$ backscattered intensity
+%
+%\hspace{2pc}$v_{inc}^2 \propto$ incident intensity
+%
+%\hspace{2pc}$c \;\rightarrow$  sound speed in the medium
+%
+%\hspace{2pc}$\tau \;\rightarrow$ pulse duration
+%
+%\hspace{2pc}$\psi \;\rightarrow$ equivalent beam width
+%}
+%
+%
+%\end{minipage}
+%\end{minipage}
+%
+%\end{frame}
 
 \section{RESULTS}
 \subsection{Detection of backscattering phenomena}
